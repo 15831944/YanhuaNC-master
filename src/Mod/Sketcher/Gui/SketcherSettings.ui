@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SketcherGui::SketcherSettings</class>
+ <widget class="QWidget" name="SketcherGui::SketcherSettings">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>602</width>
+    <height>614</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>General</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QGroupBox" name="placeholder">
+     <property name="title">
+      <string>Sketcher</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QGroupBox" name="groupBox_2">
+     <property name="title">
+      <string>Sketcher solver</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_4">
+      <item row="0" column="0">
+       <widget class="Gui::PrefCheckBox" name="checkBoxAdvancedSolverTaskBox">
+        <property name="toolTip">
+         <string>Sketcher dialog will have additional section
+'Advanced solver control' to adjust solver settings</string>
+        </property>
+        <property name="text">
+         <string>Show section 'Advanced solver control' in task dialog</string>
+        </property>
+        <property name="prefEntry" stdset="0">
+         <cstring>ShowSolverAdvancedWidget</cstring>
+        </property>
+        <property name="prefPath" stdset="0">
+         <cstring>Mod/Sketcher</cstring>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="2" column="0">
+    <widget class="QGroupBox" name="groupBox_4">
+     <property name="title">
+      <string>Dragging performance</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_5" rowstretch="0,0" columnstretch="0,0">
+      <item row="1" column="0" colspan="2">
+       <widget class="Gui::PrefCheckBox" name="checkBoxRecalculateInitialSolutionWhileDragging">
+        <property name="toolTip">
+         <string>Special solver algorithm will be used while dragging sketch elements.
+Requires to re-enter edit mode to take effect.</string>
+        </property>
+        <property name="text">
+         <string>Improve solving while dragging</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+        <property name="prefEntry" stdset="0">
+         <cstring>RecalculateInitialSolutionWhileDragging</cstring>
+        </property>
+        <property name="prefPath" stdset="0">
+         <cstring>Mod/Sketcher</cstring>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="3" column="0">
+    <widget class="QGroupBox" name="groupBox_5">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Minimum">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="baseSize">
+      <size>
+       <width>0</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="title">
+      <string>General</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_22">
+      <item>
+       <widget class="Gui::PrefCheckBox" name="checkBoxAutoRemoveRedundants">
+        <property name="toolTip">
+         <string>New constraints that would be redundant will automatically be removed</string>
+        </property>
+        <property name="text">
+         <string>Auto remove redundants</string>
+        </property>
+        <property name="checked">
+         <bool>false</bool>
+        </property>
+        <property name="prefEntry" stdset="0">
+         <cstring>AutoRemoveRedundants</cstring>
+        </property>
+        <property name="prefPath" stdset="0">
+         <cstring>Mod/Sketcher</cstring>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="Gui::PrefCheckBox" name="checkBoxEnableEscape">
+        <property name="toolTip">
+         <string>Allow to leave sketch edit mode when pressing Esc button</string>
+        </property>
+        <property name="text">
+         <string>Esc can leave sketch edit mode</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+        <property name="prefEntry" stdset="0">
+         <cstring>LeaveSketchWithEscape</cstring>
+        </property>
+        <property name="prefPath" stdset="0">
+         <cstring>Mod/Sketcher</cstring>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="Gui::PrefCheckBox" name="checkBoxNotifyConstraintSubstitutions">
+        <property name="toolTip">
+         <string>Notifies about automatic constraint substitutions</string>
+        </property>
+        <property name="text">
+         <string>Notify automatic constraint substitutions</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+        <property name="prefEntry" stdset="0">
+         <cstring>NotifyConstraintSubstitutions</cstring>
+        </property>
+        <property name="prefPath" stdset="0">
+         <cstring>Mod/Sketcher/General</cstring>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="4" column="0">
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>Gui::PrefCheckBox</class>
+   <extends>QCheckBox</extends>
+   <header>Gui/PrefWidgets.h</header>
+  </customwidget>
+ </customwidgets>
+ <tabstops>
+  <tabstop>checkBoxAdvancedSolverTaskBox</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
